@@ -1,0 +1,6 @@
+---
+- name: Create or remove file
+  my_own_namespace.yandex_cloud_elk.my_own_module:
+    path: "{{ file_path | default('/tmp/default_file.txt') }}"
+    content: "{{ file_content | default('Default content') }}"
+    state: "{{ file_state | default('present') }}"
