@@ -1,0 +1,17 @@
+---
+- name: Test my_own_module
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Create a file with content
+      my_own_module:
+        path: /tmp/test.txt
+        content: "Hello, Ansible!"
+
+    - name: Display file content
+      command: cat /tmp/test.txt
+      register: result
+
+    - name: Show content
+      debug:
+        msg: "File content: {{ result.stdout }}"

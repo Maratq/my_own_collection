@@ -1,0 +1,17 @@
+namespace: my_own_namespace
+name: yandex_cloud_elk
+version: 1.0.0
+readme: README.md
+authors:
+  - Maratq
+description: Collection with custom Ansible modules
+license_file: LICENSE
+tags:
+  - cloud
+  - elk
+  - monitoring
+repository: https://github.com/Maratq/my_own_collection
+documentation: https://github.com/Maratq/my_own_collection
+homepage: https://github.com/Maratq/my_own_collection
+issues: https://github.com/Maratq/my_own_collection/issues
+dependencies: {}

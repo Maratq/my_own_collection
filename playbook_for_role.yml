@@ -1,0 +1,9 @@
+---
+- name: Test my_file_role
+  hosts: localhost
+  gather_facts: no
+  roles:
+    - my_own_namespace.yandex_cloud_elk.my_file_role
+  vars:
+    file_path: /tmp/role_test.txt
+    file_content: "Content from role!"
